@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Interests"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/group_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginBottom="8dp"
+                android:hint="Select Group"
+                android:visibility="gone"
+                app:endIconMode="dropdown_menu"
+                app:boxStrokeColor="@android:color/black"
+                app:hintTextColor="@color/black"
+                android:background="@color/gray">
+
+                <AutoCompleteTextView
+                    android:id="@+id/group_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/gray"
+                    android:inputType="none"
+                    android:padding="12dp"
+                    android:popupBackground="@android:color/white"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/gray"
+                    android:enabled="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subgroup_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginBottom="8dp"
+                android:hint="Select SubGroup"
+                android:visibility="gone"
+                app:endIconMode="dropdown_menu"
+                app:boxStrokeColor="@android:color/black"
+                app:hintTextColor="@color/black"
+                android:background="@color/gray">
+
+                <AutoCompleteTextView
+                    android:id="@+id/subgroup_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:inputType="none"
+                    android:padding="12dp"
+                    android:background="@color/gray"
+                    android:popupBackground="@android:color/white"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/gray"
+                    android:enabled="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subsubgroup_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginBottom="8dp"
+                android:hint="Your Interest"
+                app:endIconMode="dropdown_menu"
+                app:boxStrokeColor="@android:color/black"
+                app:hintTextColor="@color/black"
+                android:background="@color/gray">
+
+                <AutoCompleteTextView
+                    android:id="@+id/subsubgroup_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:inputType="none"
+                    android:padding="12dp"
+                    android:background="@color/gray"
+                    android:popupBackground="@android:color/white"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/gray"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/request_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REQUEST TO JOIN"
+                android:backgroundTint="@color/coral"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

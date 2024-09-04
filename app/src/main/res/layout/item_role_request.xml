@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Username TextView -->
+    <TextView
+        android:id="@+id/username_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Group TextView -->
+    <TextView
+        android:id="@+id/group_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Subgroup TextView -->
+    <TextView
+        android:id="@+id/subgroup_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subgroup"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Subsubgroup TextView -->
+    <TextView
+        android:id="@+id/subsubgroup_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subsubgroup"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Buttons Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Approve Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/approve_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Approve"
+            app:backgroundTint="@color/coral"
+            android:textColor="@android:color/white" />
+
+        <!-- Reject Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reject_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reject"
+            app:backgroundTint="@color/coral"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

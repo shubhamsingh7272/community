@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/darktheme_back"
+    android:layout_height="match_parent"
+    tools:context=".Calender">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/blue"
+        app:tint="@color/white"
+        app:borderWidth="0dp"
+        android:clickable="true"
+        android:contentDescription="Create Event"
+        android:elevation="20dp"
+        android:focusable="true"
+        android:onClick="addevent"
+        android:src="@drawable/plus"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/darktheme_front"
+            android:id="@+id/yearlayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_medium"
+                android:onClick="open_calender"
+                android:text="January"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_light"
+                android:text="▼"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <Space
+                android:layout_width="3dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="90dp"
+                app:boxStrokeColor="@color/orange"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxBackgroundColor="@color/edittext"
+                android:layout_marginRight="15dp"
+                app:counterTextColor="@color/edittext"
+                app:placeholderTextColor="@color/edittext"
+                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:hint="Sec">
+
+                <AutoCompleteTextView
+                    android:id="@+id/sec_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:shadowColor="@color/edittext"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="11sp"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:id="@+id/curryear"-->
+<!--                android:clickable="true"-->
+<!--                android:onClick="open_calender"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:text="YYYY"-->
+<!--                android:layout_marginRight="4dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="17sp"/>-->
+        </LinearLayout>
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            android:id="@+id/calendarview"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:compactCalendarBackgroundColor="@color/darktheme_front"
+            app:compactCalendarCurrentDayBackgroundColor="#252424"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/darktheme_back"
+            app:compactCalendarMultiEventIndicatorColor="#fff"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextColor="#fff"
+            app:compactCalendarTextSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_anim_for_recycler"
+            android:scrollbars="none" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

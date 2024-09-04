@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darktheme_front"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="left"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Add Event"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/text_color_light"
+            android:text="Select Date for the Event"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/datebox"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_rounded_corners"
+            android:fontFamily="@font/poppins_light"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:textColor="@color/text_color_light"
+            android:textColorHint="#535151"
+            android:focusable="false"
+            android:hint="Date"
+            android:inputType="none"
+            android:paddingStart="10dp"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Select time for the Event"
+            android:textColor="@color/text_color_light"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/timebox"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_rounded_corners"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Time"
+            android:textColor="@color/text_color_light"
+            android:textColorHint="#535151"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:paddingStart="10dp"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/text_color_light"
+            android:text="Add Label for the Event"
+            android:textSize="12sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/labelofeventbox"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_rounded_corners"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/text_color_light"
+            android:textColorHint="#535151"
+            android:hint="Label"
+            android:inputType="textMultiLine|textLongMessage"
+            android:paddingStart="10dp"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/orange"
+                app:cardCornerRadius="10dp"
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:id="@+id/closedailog"
+                android:clickable="true"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"/>
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/orange"
+                app:cardCornerRadius="10dp"
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:id="@+id/addeventbutton"
+                android:clickable="true"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Add Event"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

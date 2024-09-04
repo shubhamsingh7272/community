@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_200sdp">200dp</dimen>
+    <dimen name="_18sdp">18sp</dimen>
+    <dimen name="_12sdp">12sp</dimen>
+    <dimen name="_16sdp">16sp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+</resources>

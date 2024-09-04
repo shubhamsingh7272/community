@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notes_nav_graph"
+    app:startDestination="@id/notes_Home">
+
+    <fragment
+        android:id="@+id/notes_Home"
+        android:name="com.pratik.iiits.notes.Fragments.Notes_Home"
+        android:label="fragment_notes__home"
+        tools:layout="@layout/fragment_notes__home" >
+        <action
+            android:id="@+id/action_notes_Home_to_editNotes"
+            app:destination="@id/editNotes" />
+        <action
+            android:id="@+id/action_notes_Home_to_createNotes"
+            app:destination="@id/createNotes" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNotes"
+        android:name="com.pratik.iiits.notes.Fragments.EditNotes"
+        android:label="fragment_edit_notes"
+        tools:layout="@layout/fragment_edit_notes" >
+        <action
+            android:id="@+id/action_editNotes_to_notes_Home"
+            app:destination="@id/notes_Home" />
+        <argument
+            android:name="data"
+            app:argType="com.pratik.iiits.Models.Notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNotes"
+        android:name="com.pratik.iiits.notes.Fragments.CreateNotes"
+        android:label="fragment_create_notes"
+        tools:layout="@layout/fragment_create_notes" >
+        <action
+            android:id="@+id/action_createNotes_to_notes_Home"
+            app:destination="@id/notes_Home" />
+    </fragment>
+</navigation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="4dp">
+
+    <TextView
+        android:id="@+id/header_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#EEE"
+        android:text="Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them."
+        android:textColor="#555"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+</androidx.cardview.widget.CardView>

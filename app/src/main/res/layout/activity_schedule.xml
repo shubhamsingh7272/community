@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Horizontal layout for Spinners -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Spinner
+            android:id="@+id/ugSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background"
+            android:contentDescription="Select UG" />
+
+        <Spinner
+            android:id="@+id/branchSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background"
+            android:contentDescription="Select Branch" />
+
+        <Spinner
+            android:id="@+id/sectionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background"
+            android:contentDescription="Select Section" />
+    </LinearLayout>
+
+    <!-- Calendar View -->
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="357dp"
+        android:layout_gravity="center" />
+
+    <!-- Arrow button to collapse/expand calendar -->
+    <ImageButton
+        android:id="@+id/toggleCalendarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_expand_more"
+        android:background="@null"
+        android:contentDescription="Toggle Calendar" />
+
+    <!-- RecyclerView for Schedule -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons for Adding Schedule and Holiday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/addSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="Add Schedule"
+            android:src="@drawable/ic_add_schedule"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageButton
+            android:id="@+id/addHoliday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="Add Holiday"
+            android:src="@drawable/ic_add_holiday"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

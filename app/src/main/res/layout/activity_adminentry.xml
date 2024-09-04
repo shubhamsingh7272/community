@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- UG Program Input -->
+        <EditText
+            android:id="@+id/ugEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UG Program"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/addUgButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add UG Program"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:background="@drawable/button_background" />
+
+        <!-- Branch Input -->
+        <EditText
+            android:id="@+id/branchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Branch"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/addBranchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Branch"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:background="@drawable/button_background" />
+
+        <!-- Section Input -->
+        <EditText
+            android:id="@+id/sectionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Section"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/addSectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Section"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:background="@drawable/button_background" />
+
+        <!-- Subject Input -->
+        <EditText
+            android:id="@+id/subjectEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:padding="12dp" />
+
+        <!-- Day of the Week Spinner -->
+        <Spinner
+            android:id="@+id/dayOfWeekSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#FFDDDDDD"
+            android:popupBackground="@android:color/white" />
+
+        <!-- Date Picker Button -->
+        <Button
+            android:id="@+id/datePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:background="@drawable/button_background" />
+
+        <!-- Time Picker -->
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:background="#FFDDDDDD" />
+
+        <!-- Schedule Input -->
+        <EditText
+            android:id="@+id/scheduleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room Number"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="12dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

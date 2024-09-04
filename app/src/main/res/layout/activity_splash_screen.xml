@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:visibility="gone"
+                android:alpha="1"
+                android:src="@drawable/ilabslogo"/>
+
+
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:alpha="1"
+                android:src="@drawable/collegelogo"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Made in association \nwith\n Precision E-Labs"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:alpha="1"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

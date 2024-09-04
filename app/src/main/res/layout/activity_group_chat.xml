@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:padding="16dp">
+
+    <!-- Header TextView -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/groupHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group Name"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/exit_group_button"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Exit"
+            android:src="@drawable/baseline_logout_24" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll3"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/messagesendlayout"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/ic_baseline_emoji_emotions_24"/>
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_light"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Type something..."
+            android:layout_weight="1"
+            android:id="@+id/messageInput"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/text_color_light"
+            android:textColorHint="@color/text_color_light"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/poppins_medium"/>
+        <ImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:background="@drawable/blue_dot"
+            android:src="@drawable/send_btn"
+            android:onClick="sendMessage"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_height="@dimen/_40sdp" />
+
+    </LinearLayout>
+</LinearLayout>

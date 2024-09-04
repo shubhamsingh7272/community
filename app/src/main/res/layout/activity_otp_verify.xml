@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context=".OtpVerifyActivity">
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ccp_defaultNameCode="IN"
+        android:textColor="@android:color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Phone Number"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@android:color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phonebox"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext_rounded_corners"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Send OTP"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="8dp"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="2dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:hint="OTP"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@android:color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otpbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="number"
+            android:textColor="@android:color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="Verify OTP"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="8dp"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="2dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resendOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="Resend OTP"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="8dp"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="2dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/changeNumberButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="Change Number"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="8dp"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="2dp"/>
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Please enter your phone number to receive an OTP."
+        android:visibility="visible"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/otpInstructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Please enter the OTP sent to your phone number."
+        android:visibility="gone"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/countdownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text=""
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

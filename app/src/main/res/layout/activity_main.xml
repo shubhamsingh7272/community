@@ -1,0 +1,312 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/root_layout1"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_layout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <!-- Top Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userimage"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:clickable="true"
+                    android:elevation="@dimen/_10sdp"
+                    android:onClick="openprofile"
+                    android:src="@drawable/profile" />
+            </LinearLayout>
+
+            <!-- Greeting -->
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Hi User"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/daytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/spartan_regular"
+                android:text="Good morning!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp" />
+
+            <!-- Features Cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:weightSum="2"
+                android:padding="@dimen/_5sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="openGroups"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Community"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginBottom="-20dp"
+                        android:alpha="0.6"
+                        android:src="@drawable/img5"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="openEvents"
+                    app:cardBackgroundColor="@color/ivory"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Announcements"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginBottom="-20dp"
+                        android:alpha="0.6"
+                        android:src="@drawable/announce" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:weightSum="2"
+                android:padding="@dimen/_5sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="openMarket"
+                    app:cardBackgroundColor="@color/ivory"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="MarketPlace"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginBottom="-20dp"
+                        android:alpha="0.4"
+                        android:src="@drawable/markets" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="openCalender"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Calendar"
+                        android:textColor="@color/ivory"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginBottom="-20dp"
+                        android:alpha="0.4"
+                        android:src="@drawable/calendar" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:weightSum="2"
+                android:padding="@dimen/_5sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="opennotesactivity"
+                    app:cardBackgroundColor="@color/yellow"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="My Notes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginBottom="-20dp"
+                        android:alpha="0.6"
+                        android:src="@drawable/notes" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="openMaps"
+                    app:cardBackgroundColor="@color/ivory"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Community \nMap"
+                        android:textColor="@color/smoke"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginBottom="-20dp"
+                        android:alpha="0.6"
+                        android:src="@drawable/marketplace" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

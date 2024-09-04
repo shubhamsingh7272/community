@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a Role"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black" />
+
+    <!-- Group Spinner -->
+    <Spinner
+        android:id="@+id/group_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:prompt="@string/select_ug_program"
+        android:background="@color/white"
+        android:popupBackground="@android:color/black" />
+
+    <!-- Subgroup Spinner -->
+    <Spinner
+        android:id="@+id/subgroup_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:prompt="@string/select"
+        android:background="@color/white"
+        android:popupBackground="@android:color/black" />
+
+    <!-- Subsubgroup Name Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Role Name"
+        android:textColorHint="@color/black"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/subsubgroup_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Create Subsubgroup Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create_subsubgroup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Create Role"
+        app:backgroundTint="@color/coral"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requests"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black" />
+
+    <!-- Role Requests List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/role_requests_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

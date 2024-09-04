@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="orange">#0070DA</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="edittext">#172029</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_colour">#252525</color>
+    <color name="red">#FF5151</color>
+    <color name="forestgreen">#228B22</color>
+    <color name="green">#11D99B</color>
+    <color name="dirty_yellow">#D9D92F</color>
+    <color name="event_theme">#515151</color>
+    <color name="blac_color">#10181F</color>
+    <color name="orange_gradient1">#7EE8FA</color>
+    <color name="orange_gradient2">#01BAEF</color>
+    <color name="orange_gradient3">#0070DA</color>
+    <color name="orange_gradient4">#63A4FF</color>
+<!--    Chat APP-->
+    <color name="darktheme_front">#172029</color>
+    <color name="darktheme_back">#10181F</color>
+    <color name="text_color_light">#A3A3A3</color>
+    <color name="blue">#0070DA</color>
+    <color name="grey">#707070</color>
+    <color name="teal">#4297A0</color>
+    <color name="ivory">#F4EAE6</color>
+    <color name="coral">#E57F84</color>
+    <color name="misty">#2F5061</color>
+    <color name="honey">#C44B4F</color>
+
+    <color name="colorPrimaryDark">#6B8E23</color>
+    <color name="colorAccent">#8FBC8F</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="lightGray">#E0E0E0</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="backgroundLight">#FAFAFA</color>
+    <color name="backgroundDark">#303030</color>
+
+
+    <color name="admin_color">#FF0000</color>
+    <color name="moderator_color">#00FF00</color>
+    <color name="member_color">#0000FF</color>
+    <color name="default_role_color">#CCCCCC</color>
+    <color name="gradient_start">#00000000</color> <!-- Transparent -->
+    <color name="gradient_end">#80000000</color> <!-- Semi-transparent black -->
+    <color name="background_color">#F5F5F5</color>
+
+    <!-- Define an array of colors for roles -->
+    <array name="role_colors">
+        <item>#FFAB91</item> <!-- Light Orange -->
+        <item>#90CAF9</item> <!-- Light Blue -->
+        <item>#A5D6A7</item> <!-- Light Green -->
+        <item>#CE93D8</item> <!-- Light Purple -->
+        <item>#FFF59D</item> <!-- Light Yellow -->
+    </array>
+
+    <!-- Define a neutral gray color -->
+    <color name="neutral_gray">#BDBDBD</color>
+
+    <color name="background_light">#FAFAFA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="colorPrimary">#6200EE</color>
+
+    <color name="colorItem1">#FFCDD2</color>
+    <color name="colorItem2">#C8E6C9</color>
+    <color name="colorItem3">#BBDEFB</color>
+    <color name="colorItem4">#FFF9C4</color>
+
+
+</resources>

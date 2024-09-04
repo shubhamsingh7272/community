@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".ChooseActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="What would you like to create?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/createPostCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createPostButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Post"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/white"
+            app:icon="@drawable/ic_create_post"
+            app:iconPadding="8dp"
+            app:iconTint="@color/black"
+            android:textAlignment="viewStart"
+            android:padding="16dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/createPollCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createPostCard"
+        android:backgroundTint="@color/white"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createPollButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Poll"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/white"
+            app:icon="@drawable/ic_create_poll"
+            app:iconPadding="8dp"
+            app:iconTint="@color/black"
+            android:textAlignment="viewStart"
+            android:padding="16dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
